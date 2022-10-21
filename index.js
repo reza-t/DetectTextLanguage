@@ -7,10 +7,6 @@ dotenv.config();
 
 const client = new ComprehendClient({
   region: "eu-central-1",
-  credentials: {
-    accessKeyId: process.env.AWS_SECRET_ACCESS_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  },
 });
 
 const params = {
